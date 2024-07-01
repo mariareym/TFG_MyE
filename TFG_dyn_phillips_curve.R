@@ -356,7 +356,8 @@
  
  onesa_forecastMCMC <- filterMCMC$f
  dpcMCMC_perf <- smoothMCMC$s[,1] + smoothMCMC$s[,2]*us.ts[,3] + smoothMCMC$s[,3]*us.ts[,4]
- 
+
+ set.seed(6385)
  dpc_FFBS <- dlmBSample(filterMCMC)
  
  
